@@ -34,10 +34,10 @@ setInterval(() => {
     }).catch(e => {
         switch (e.message) {
             case "Forbidden":
-                console.log("\x1B[1m[ \x1B[33mERRO\x1B[37m ]\x1B[3m API zoada");
+                console.log("\x1B[1m[ \x1B[33mERRO\x1B[37m ]\x1B[3m API com erro");
                 break;
             case "No match":
-                console.log(`\x1B[1m[ \x1B[32mFÁCIL\x1B[37m ]\x1B[3m PEGA LOGO: ${n}.`);
+                console.log(`\x1B[1m[ \x1B[32mDISPONIVEL\x1B[37m ]\x1B[3m : ${n}.`);
                 process.exit(0);
                 break;
             default:
